@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="referrer" content="no-referrer">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/01.css">
+	
+	
+	<title>Music</title>
+</head>
+<body>
+	<audio autoplay ></audio>
+
+	<div class="wrapper">
+		<!-- 背景图片 -->
+		<div class="lyricBox">
+		 	<ul class="lyric"></ul>
+		</div>
+		<!-- 背景图片 -->
+		
+		<!-- 功能组件 -->
+		<div class="controls unselect">
+			<div class = channel>
+				<span class="glyphicon glyphicon-chevron-left btn3" title="换频道"></span>
+				<span class="record" title="" data-id="">pindao</span>
+				<span class="glyphicon glyphicon-chevron-right btn4" title="换频道"></span>
+			</div>
+				<!-- 歌曲信息 -->
+			<div class="music-message">
+				<p class="musicName" title="">musicName</p>
+				<p class="singer" title="">singer</p>
+			</div>
+			<!-- 歌曲信息 -->
+			<!-- 音乐播放。换频道，下一曲按钮 -->
+
+			<!-- 分享，收藏，喜欢按钮 -->
+			<div class="music-icon ">
+				<a class="glyphicon glyphicon-share-alt colored" href="http://service.weibo.com/share/share.php?title=#_loginLayer_1466697157538" target="new" title="分享"></a>
+				<span class="glyphicon glyphicon-star-empty colored star" title="收藏"></span>
+				<span class="glyphicon glyphicon-heart-empty colored heart" title="喜欢"></span>
+			</div>		
+			<div class="music-control">
+				<span class="glyphicon glyphicon-step-backward btn2" title="换曲"></span>
+				<span class="glyphicon glyphicon-pause btn1" title="播放/暂停"></span>
+				<span class="glyphicon glyphicon-step-forward btn2" title="换曲"></span>
+			</div>
+				<!-- 进度条 -->
+			<div>
+				<div class="bar">
+					<span class="basebar">
+						<span class="progressbar"></span>
+					</span>
+				</div>
+				<!-- 进度条 -->
+				<div class="volume">
+				
+					<span class="glyphicon glyphicon-volume-up volume-icon"></span>
+					<div class="volume-ctrl">
+						<span class="volumebase">
+							<span class="volumebar "></span>
+						</span>
+					</div>
+				
+				
+				</div>
+			</div>
+		</div>
+		<!-- 功能组件 -->
+	</div>
+	<script type="text/javascript" src="./lib/jquery-3.2.1.js"></script>
+	<script src="./js/02.js"></script>
+</body>
+</html>
+
+
