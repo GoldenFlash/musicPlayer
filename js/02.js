@@ -92,11 +92,7 @@
 			$.ajax({ 
 				Method:'get',
 				dataType:'json',
-<<<<<<< HEAD
 				url: "https://jirenguapi.applinzi.com/fm/getChannels.php",
-=======
-				url:'https://api.jirengu.com/fm/getChannels.php',
->>>>>>> c2de6eee73ee17a45a3d66caea7f5a1f9c1e235d
 				success:function(data){
 					var channel = data.channels;
 					that.num = Math.floor(Math.random()*channel.length);
@@ -119,11 +115,7 @@
 			$.ajax({ 
 				Method:'get',
 				dataType:'json',
-<<<<<<< HEAD
 				url: "https://jirenguapi.applinzi.com/fm/getChannels.php",
-=======
-				url:'https://api.jirengu.com/fm/getChannels.php',
->>>>>>> c2de6eee73ee17a45a3d66caea7f5a1f9c1e235d
 				success:function(data){
 					var channel = data.channels;
 					that.num = Math.floor(Math.random()*channel.length);
@@ -147,11 +139,7 @@
 			$.ajax({
 				Method:'get',
 				dataType:'json',
-<<<<<<< HEAD
 				url:"https://jirenguapi.applinzi.com/fm/getSong.php",
-=======
-				url:'https://api.jirengu.com/fm/getSong.php',
->>>>>>> c2de6eee73ee17a45a3d66caea7f5a1f9c1e235d
 				data:{'channel':channelId},
 				success:function(data){
 					var resource = data.song[0],
@@ -191,11 +179,7 @@
 				ssid = $("audio").attr('ssid');
 			$.ajax({
 				Method:'post',
-<<<<<<< HEAD
 				url: "https://jirenguapi.applinzi.com/fm/getLyric.php",
-=======
-				url:'https://api.jirengu.com/fm/getLyric.php',
->>>>>>> c2de6eee73ee17a45a3d66caea7f5a1f9c1e235d
 				data:{
 					sid:sid,
 					ssid:ssid,
@@ -313,4 +297,4 @@
 		}
 	};
 	var player= new Music();
-})();})();
+})();
