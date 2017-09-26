@@ -92,7 +92,7 @@
 			$.ajax({ 
 				Method:'get',
 				dataType:'json',
-				url:'https://api.jirengu.com/fm/getChannels.php',
+				url: "https://jirenguapi.applinzi.com/fm/getChannels.php",
 				success:function(data){
 					var channel = data.channels;
 					that.num = Math.floor(Math.random()*channel.length);
@@ -115,7 +115,7 @@
 			$.ajax({ 
 				Method:'get',
 				dataType:'json',
-				url:'https://api.jirengu.com/fm/getChannels.php',
+				url: "https://jirenguapi.applinzi.com/fm/getChannels.php",
 				success:function(data){
 					var channel = data.channels;
 					that.num = Math.floor(Math.random()*channel.length);
@@ -139,7 +139,7 @@
 			$.ajax({
 				Method:'get',
 				dataType:'json',
-				url:'https://api.jirengu.com/fm/getSong.php',
+				url:"https://jirenguapi.applinzi.com/fm/getSong.php",
 				data:{'channel':channelId},
 				success:function(data){
 					var resource = data.song[0],
@@ -179,7 +179,7 @@
 				ssid = $("audio").attr('ssid');
 			$.ajax({
 				Method:'post',
-				url:'https://api.jirengu.com/fm/getLyric.php',
+				url: "https://jirenguapi.applinzi.com/fm/getLyric.php",
 				data:{
 					sid:sid,
 					ssid:ssid,
